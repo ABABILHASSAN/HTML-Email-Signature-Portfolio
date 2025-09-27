@@ -1,0 +1,305 @@
+:root{
+
+
+  --border: 2px solid #38E54D;
+  --green: #38E54D;
+  --blue: #2192FF;
+  --yellow: #FDFF00;
+  --orange: #F97300;
+  --pink: #EB3678;
+  --white: #fff;
+}
+
+
+*{
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:all .2s linear;
+  transition:width none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--active-bg);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--orange);
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+  /* transition: background 0.3s, color 0.3s; */
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #1a1a1a;
+  color: var(--white);
+}
+.dark-mode .navbar {
+  background: #333;
+  color: var(--light-black);
+}
+
+.dark-mode .component {
+  background: #697565;
+}
+
+.dark-mode #header{
+  background: #524C42;
+}
+
+
+/* Header Section Starts From Here */
+
+#main-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: end;
+    gap: .5rem;
+}
+
+.navbar .logo span{
+    font-size: 1.2rem;
+    color: var(--blue);
+    gap: .1rem;
+    font-weight: bolder;
+}
+
+.navbar .logo .img{
+    width: 46px;
+    height: 46px;
+}
+
+.navbar .logo img{
+  width: 100%;
+  border-radius: 50%;
+  border: var(--border);
+}
+
+.navbar .nav-links{
+  font-size: 2.2rem;
+}
+
+.navbar .nav-links a{
+  color: var(--green);
+}
+
+.navbar button{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background: var(--blue);
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border);
+}
+
+.navbar button i{
+  color: var(--yellow);
+  font-size: 1.8rem;
+}
+
+.navbar button:hover i{
+  color: var(--blue);
+
+}
+
+.navbar button:hover{
+  background: var(--green);
+}
+
+.heading{
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+/* Header Section Ends From Here */
+
+/* Main Body Starts From Here */
+
+.signature-container {
+    padding: 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 3rem;
+}
+
+.signature-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    color: #222;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.signature-item .view-button{
+    background: #25d366;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    color: #000;
+    
+}
+
+.signature-item .view-button:hover{
+    background: var(--blue);
+}
+
+.signature-item .signature-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signature-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* Main Body Ends From Here */
+
+/* Footer Section Stars From Here */
+.footer {
+  background: #111827;
+  color: #f3f4f6;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h2 {
+  font-size: 2.5rem;
+  color: var(--orange);
+}
+
+.footer-brand h2 span{
+  color: var(--pink);
+}
+
+.footer-brand p{
+  font-size: 1.5rem;
+}
+
+.footer-social a {
+  margin-right: 1rem;
+  color: var(--orange);
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--pink);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: var(--pink);
+}
+
+/* Footer Section Ends From Here */
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+
+}
+
+
+
+@media (max-width:768px){
+    .heading{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:550px){
+
+    html{
+        font-size: 45%;
+    }
+
+}
+
+
+@media (max-width:450px){
+
+    .navbar .nav-links{
+        display: none;
+    }
+
+}
+
+
+/* Header Section Ends Here */
